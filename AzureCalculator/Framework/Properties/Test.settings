@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Framework.Properties" GeneratedClassName="Test">
+  <Profiles />
+  <Settings>
+    <Setting Name="Browser" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Chrome</Value>
+    </Setting>
+    <Setting Name="TimeoutInSecs" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+    <Setting Name="ReportGenerator" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="AzureCalculatorUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://calculator-web.azurewebsites.net/</Value>
+    </Setting>
+    <Setting Name="AzureCalculatorHost" Type="System.String" Scope="User">
+      <Value Profile="(Default)">calculator-api.azurewebsites.net</Value>
+    </Setting>
+    <Setting Name="AzureCalculatorPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">/api/calculate</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

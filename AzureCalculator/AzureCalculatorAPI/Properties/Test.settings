@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AzureCalculatorAPI.Properties" GeneratedClassName="Test">
+  <Profiles />
+  <Settings>
+    <Setting Name="AzureCalculatorHost" Type="System.String" Scope="User">
+      <Value Profile="(Default)">calculator-api.azurewebsites.net</Value>
+    </Setting>
+    <Setting Name="GenerateReport" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AzureCalculatorPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">/api/Calculate</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
