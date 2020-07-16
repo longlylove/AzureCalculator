@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework", "Framework\Fram
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureCalculatorAPI", "AzureCalculatorAPI\AzureCalculatorAPI.csproj", "{B71AD983-68BF-45FA-9F15-5036756604A3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestReportExamples", "TestReportExamples", "{8A537CDD-8FF4-48C3-829A-43D816B6A7C2}"
+	ProjectSection(SolutionItems) = preProject
+		TestReportExamples\AzureCalculator_API_20200717_012344.zip = TestReportExamples\AzureCalculator_API_20200717_012344.zip
+		TestReportExamples\AzureCalculator_UI_20200717_013552.zip = TestReportExamples\AzureCalculator_UI_20200717_013552.zip
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
