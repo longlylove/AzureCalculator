@@ -30,13 +30,15 @@ Steps to run via Visual Studio:
 1. Restore nuget for the solution and build
 2. Using VS test explorer to ensure all the tests are discovered
 3. Under the \bin\Debug folder, create a file named appSettings.config with below content
-"
+
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <appSettings>
 	<add key="CalcApiKey" value="kBG9dKn6V9dRXa5Uosi4z9Sj7sIKguDR86UZJfuS7oQ3IlGFqQ0krA=="/>
 	<add key="GenerateReport" value="True"/>
 </appSettings> 
-"
+```
+
 4. In the test explorer, right click and run a particular test (ie. AddingNumbers_Add_01) or run full suite (ie. AzureCalculatorAPI.Features)
 5. After test run completed, under the project \bin\Debug folder, find the Reports folder
 6. Test report should be available under a subfolder (ie. AzureCalculator_API_20200717_012344) as a .html file (ie. AzureCalculator_API.html).
