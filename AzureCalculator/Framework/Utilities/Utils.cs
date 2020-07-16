@@ -41,9 +41,9 @@ namespace Framework.Utilities
             return string.IsNullOrWhiteSpace(value) ? string.Empty : value;
         }
 
-        public void WaitInSeconds(int seconds)
+        public void WaitInMilliseconds(int milliseconds)
         {
-            Thread.Sleep(TimeSpan.FromSeconds(seconds));
+            Thread.Sleep(TimeSpan.FromMilliseconds(milliseconds ));
         }
     }
 }

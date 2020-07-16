@@ -19,7 +19,7 @@ namespace Framework.Base
         {
         }
 
-        public static ExtentV3HtmlReporter InitializeReport(string reportName)
+        public static ExtentV3HtmlReporter InitializeReport(string reportName, string runDirectory="")
         {
             var reportsDirectory = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Reports");
 
@@ -28,7 +28,9 @@ namespace Framework.Base
                 Directory.CreateDirectory(reportsDirectory);
             }
 
-            var reportsFilename = $"{reportName}_{DateTime.Now:yyyyMMdd_HHmmss}_{Properties.Test.Default.AzureCalculatorPath}.html";
+            if (runDirectory == "")
+                runDirectory = $"{reportName}_{DateTime.Now:yyyyMMdd_HHmmss}";
+            var reportsFilename = $"{runDirectory}\\{reportName}.html";
 
             var reportsPath = Path.Combine(reportsDirectory, reportsFilename);
 

@@ -132,5 +132,40 @@ namespace Framework.Base
 
             return element;
         }
+
+        public string GetText(By locator)
+        {
+            var webElement = FindElement(locator);
+            var text = "";
+            try
+            {
+                text = webElement.Text;
+                if (string.IsNullOrWhiteSpace(text))
+                {
+                    text = webElement.GetAttribute("textContent");
+                }
+            }
+            catch (Exception e)
+            {
+                Log($"Error retrieving element text of {webElement.GetAttribute("Name")}. Error: {e.Message}");
+            }
+
+            return text;
+        }
+
+        public void SwitchToFrame(By locator)
+        {
+            _driver.SwitchTo().Frame(FindElement(locator));
+        }
+
+        public void SwitchToDefaultContent()
+        {
+            _driver.SwitchTo().DefaultContent();
+        }
+
+        public string GetElementAttribute(By locator, string attribute)
+        {
+            return FindElement(locator).GetAttribute(attribute);
+        }
     }
 }

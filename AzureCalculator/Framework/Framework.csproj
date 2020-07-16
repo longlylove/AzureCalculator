@@ -133,6 +133,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base\DriverSetup.cs" />
     <Compile Include="Base\ReportGenerator.cs" />
     <Compile Include="Base\SelectSettings.cs" />
     <Compile Include="Base\SeleniumActionHelper.cs" />

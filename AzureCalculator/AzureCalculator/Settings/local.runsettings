@@ -1,0 +1,20 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<RunSettings>
+  <TestRunParameters>
+    <!-- Chrome, Responsive, IE, Firefox, Edge, Safari, Android_Chrome, iOS_Safari, iOS_Chrome -->
+    <Parameter name="Browser" value="HeadlessChrome"/>
+    <!--Azure calculator page-->
+    <Parameter name="AzureCalculatorUrl" value="https://calculator-web.azurewebsites.net/"></Parameter>
+  </TestRunParameters>
+  <RunConfiguration>
+    <!-- Number of cores of the machine running the tests-->
+    <MaxCpuCount>2</MaxCpuCount>
+  </RunConfiguration>
+  <MSTest>
+    <Parallelize>
+      <Workers>2</Workers>
+      <Scope>ClassLevel</Scope>
+    </Parallelize>
+  </MSTest>
+</RunSettings>
+

@@ -25,23 +25,23 @@ namespace Framework.Utilities
                 {
                     var exec = new JsExecutor(_driver);
                     var title = "";
-                    while (sw.Elapsed.TotalMilliseconds <= TimeSpan.FromSeconds(30).TotalMilliseconds)
+                    while (sw.Elapsed.TotalMilliseconds <= TimeSpan.FromSeconds(10).TotalMilliseconds)
                     {
                         title = (string)exec.Execute("return document.title");
                         var readyState = (string)exec.Execute("return document.readyState");
                         if (!(title.ToLower().Contains(pageTitle.ToLower())))
                         {
-                            Thread.Sleep(2000);
+                            Thread.Sleep(500);
                         }
                         else
                         {
                             if (readyState != "complete")
                             {
-                                Thread.Sleep(2000);
+                                Thread.Sleep(500);
                             }
                             else if (readyState == "complete")
                             {
-                                Thread.Sleep(1500);
+                                Thread.Sleep(300);
                                 return;
                             }
                         }
