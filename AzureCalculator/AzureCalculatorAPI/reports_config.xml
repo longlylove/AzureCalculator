@@ -14,11 +14,11 @@
     <protocol>https</protocol>
 
     <!-- title of the document -->
-    <documentTitle>Azure.Calculator</documentTitle>
+    <documentTitle>Azure.Calculator.API</documentTitle>
     <chartVisibilityOnOpen>true</chartVisibilityOnOpen>
 
     <!-- report name - displayed at top-nav -->
-    <reportName>Azure.Calculator</reportName>
+    <reportName>Azure.Calculator.API</reportName>
 
     <!-- location of charts in the test view -->
     <!-- top, bottom -->
